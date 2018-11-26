@@ -1,18 +1,20 @@
 public class HelloWorld{
 
      public static void main(String []args){
-         String fab=" ";
-        int a[]=new int[19];
-        a[1]=1;
-        a[2]=1;
-        int sum;
-        for(int i=1;i<20;i++)
-        {  
-            sum=a[i]+a[i+1];
-            a[i+2]=sum;
-            a[i]=a[i+1];
-            a[i+1]=a[i+2];
-        }
-        System.out.println(a);
+         
+     
+         int a=1;
+         int b=1;
+         int c;
+         String fab=a+" "+b;
+         for(int i=1;i<=20;i++)
+         {
+             c=a+b;
+             fab=fab+" " +c;
+             a=b;
+             b=c;
+         }
+         System.out.print(fab);
      }
+     
 }
